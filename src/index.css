@@ -1,0 +1,108 @@
+@import "tailwindcss";
+
+
+/* ---------- MOBILE: SHOW ONLY LOGO + CART ---------- */
+@media (max-width: 768px) {
+  /* Reduce navbar height */
+  nav.h-\[100px\] {
+    height: 70px !important;
+    padding: 0 15px !important;
+    gap: 20px !important;
+  }
+
+  /* Hide the entire dropdown + search container */
+  nav.h-\[100px\] > div:nth-child(2) {
+    display: none !important;
+  }
+
+  /* Logo adjustment */
+  nav.h-\[100px\] > div:first-child span {
+    font-size: 22px !important;
+  }
+
+  /* Center logo + cart properly */
+  nav.h-\[100px\] {
+    justify-content: space-between !important;
+  }
+
+  /* Cart spacing */
+  a[href="/cart"] {
+    margin-left: 0 !important;
+  }
+}
+
+
+
+/* ============================
+   GLOBAL RESPONSIVE QUERIES
+   (Works for all devices)
+=============================== */
+
+/* ---------- Extra Small Devices (Phones ≤ 480px) ---------- */
+@media (max-width: 480px) {
+  .slowers-container {
+    padding: 8px !important;
+  }
+
+  .slowers-slide-wrapper {
+    gap: 12px !important;
+    padding: 12px !important;
+  }
+
+  .slowers-image {
+    height: 180px !important;
+  }
+
+  .slowers-title {
+    font-size: 1.4rem !important;
+  }
+
+  .slowers-text {
+    font-size: 0.95rem !important;
+  }
+}
+
+/* ---------- Small Devices (Large Phones ≤ 640px) ---------- */
+@media (max-width: 640px) {
+  .slowers-image {
+    height: 220px !important;
+  }
+
+  .slowers-title {
+    font-size: 1.6rem !important;
+  }
+}
+
+/* ---------- Medium Devices (Tablets ≤ 768px) ---------- */
+@media (max-width: 768px) {
+  .slowers-slide-wrapper {
+    flex-direction: column !important;
+    text-align: center !important;
+  }
+
+  .slowers-image {
+    height: 260px !important;
+  }
+
+  .slowers-text {
+    font-size: 1rem !important;
+  }
+}
+
+/* ---------- Large Devices (Small Laptops ≤ 1024px) ---------- */
+@media (max-width: 1024px) {
+  .slowers-image {
+    height: 300px !important;
+  }
+}
+
+/* ---------- Extra Large Devices (Monitors ≥ 1440px) ---------- */
+@media (min-width: 1440px) {
+  .slowers-image {
+    height: 420px !important;
+  }
+
+  .slowers-title {
+    font-size: 2.2rem !important;
+  }
+}
