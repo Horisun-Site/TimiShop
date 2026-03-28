@@ -211,18 +211,20 @@ const Cart = () => {
                     />
                   </div>
                   <button
-                    onClick={() => {
-                      handleFlutterPayment({
-                        callback: (response) => {
-                          console.log(response);
-                          closePaymentModal(); // this will close the modal programmatically
-                        },
-                        onClose: () => {},
-                      });
-                    }}
+                    // onClick={() => {
+                    //   handleFlutterPayment({
+                    //     callback: (response) => {
+                    //       console.log(response);
+                    //       closePaymentModal(); // this will close the modal programmatically
+                    //     },
+                    //     onClose: () => {},
+                    //   });
+                    // }}
                     className="bg-green-600 text-center text-white px-6 py-2 rounded-lg hover:bg-green-700 transition text-sm sm:text-base cursor-pointer"
                   >
-                    Proceed to Checkout
+                    <a href="/checkout">
+                      Proceed to Checkout
+                    </a>
                   </button>
                 </div>
               </div>
