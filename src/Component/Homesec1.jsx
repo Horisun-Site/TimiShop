@@ -5,7 +5,7 @@ const Homesec1 = () => {
   return (
     <div className="bg-[#1a1a1a] min-h-[30vh] flex items-center justify-center px-4">
       <main className="text-center max-w-3xl">
-        <h1 className="text-4xl sm:text-5xl font-extrabold text-gray-900 dark:text-gray-100 tracking-tight">
+        <h1 className="text-4xl sm:text-5xl font-extrabold text-gray-900 dark:text-gray-100 mt-10 tracking-tight">
           Welcome to <span className="text-blue-600">Timilehin Store</span>
         </h1>
 
